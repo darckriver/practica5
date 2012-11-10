@@ -1,4 +1,5 @@
 // javaScript document
+
 document.addEventListener("load",function(){
 	document.addEventListener("diviceready",function(){
 		//action
@@ -28,10 +29,12 @@ document.addEventListener("load",function(){
 				navigator.geolocation.getCurrentPosition(function(position){
 					datosGeo.innerHTML = "Latitud "+ posititon.latitude+"<br/>"+ "longitud: "+position.longitude;
 				}, function(err){
-					alert(err.message):
+					alert(err.message);
 				});
 			}
 		},false);
 	}, false);
 },false);
+
+alert("HOla");
 	
