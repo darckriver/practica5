@@ -23,7 +23,14 @@ document.addEventListener("load",function(){
 			window.localStorage.setItem("puntos",0);
 			}
 		document.addEventListener("online",function(){
-		alert(navigator.network.connection.type);
+			alert(navigator.network.connection.type);
+			if (navigator.network.connection.type == "wifi"){
+				navigator.geolocation.getCurrentPosition(function(position){
+					datosGeo.innerHTML = "Latitud "+ posititon.latitude+"<br/>"+ "longitud: "+position.longitude;
+				}, function(err){
+					alert(err.message):
+				});
+			}
 		},false);
 	}, false);
 },false);
