@@ -27,7 +27,7 @@ function docReady(){
 			alert(navigator.network.connection.type);
 			if (navigator.network.connection.type == "wifi"){
 				navigator.geolocation.getCurrentPosition(function(position){
-					datosGeo.innerHTML = "Latitud "+ posititon.coords.latitude+"<br/>"+ "longitud: "+position.coords.longitude;
+					datosGeo.innerHTML = "Latitud "+ position.coords.latitude+"<br/>"+ "longitud: "+position.coords.longitude;
 				}, function(err){
 					alert(err.message);
 				});
