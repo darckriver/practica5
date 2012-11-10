@@ -36,5 +36,5 @@ document.addEventListener("load",function(){
 	}, false);
 },false);
 
-alert("HOla");
+
 	
