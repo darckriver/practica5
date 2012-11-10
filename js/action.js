@@ -13,8 +13,8 @@ document.addEventListener("load",function(){
 		window.localStorage.removeItem("active");
 		//limpiando
 		window.localStorage.clear();*/
-		
-		if (window.localStorage.getItem("active")){
+		alert("Esto es una prueba");
+/*		if (window.localStorage.getItem("active")){
 			alert(window.localStorage.getItem("active"));
 			document.addEventListener("resume",function(){
 				window.localStorage.setItem("puntos",window.localStorage.getItem("puntos")+1);
@@ -33,7 +33,7 @@ document.addEventListener("load",function(){
 				});
 			}
 		},false);
-	}, false);
+	}, false); */
 },false);
 
 
