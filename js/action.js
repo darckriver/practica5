@@ -1,7 +1,7 @@
 // javaScript document
 
 function docReady(){
-	document.addEventListener("diviceready",function(){
+	document.addEventListener("deviceready",function(){
 		//action
 		//agregamos un campo y un dato
 	/*	window.localStorage.setItem("active",true);
@@ -14,7 +14,8 @@ function docReady(){
 		//limpiando
 		window.localStorage.clear();*/
 		alert("Esto es una prueba");
-/*		if (window.localStorage.getItem("active")){
+	
+		if (window.localStorage.getItem("active")){
 			alert(window.localStorage.getItem("active"));
 			document.addEventListener("resume",function(){
 				window.localStorage.setItem("puntos",window.localStorage.getItem("puntos")+1);
@@ -32,9 +33,10 @@ function docReady(){
 					alert(err.message);
 				});
 			}
-		},false); */
+		},false); 
 	}, false); 
 }
-
+alert("Esto es una prueba");
+	
 
 	
