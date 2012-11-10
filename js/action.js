@@ -32,8 +32,8 @@ document.addEventListener("load",function(){
 					alert(err.message);
 				});
 			}
-		},false);
-	}, false); */
+		},false); */
+	}, false); 
 },false);
 
 
