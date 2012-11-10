@@ -12,9 +12,8 @@ function docReady(){
 		//Eliminamos campo
 		window.localStorage.removeItem("active");
 		//limpiando
-		window.localStorage.clear();*/
-		alert("Esto es una prueba");
-	
+		window.localStorage.clear();*/	
+			
 		if (window.localStorage.getItem("active")){
 			alert(window.localStorage.getItem("active"));
 			document.addEventListener("resume",function(){
@@ -28,7 +27,7 @@ function docReady(){
 			alert(navigator.network.connection.type);
 			if (navigator.network.connection.type == "wifi"){
 				navigator.geolocation.getCurrentPosition(function(position){
-					datosGeo.innerHTML = "Latitud "+ posititon.latitude+"<br/>"+ "longitud: "+position.longitude;
+					datosGeo.innerHTML = "Latitud "+ posititon.coords.latitude+"<br/>"+ "longitud: "+position.coords.longitude;
 				}, function(err){
 					alert(err.message);
 				});
@@ -36,7 +35,8 @@ function docReady(){
 		},false); 
 	}, false); 
 }
-alert("Esto es una prueba");
+
+
 	
 
 	
