@@ -1,6 +1,6 @@
 // javaScript document
 
-document.addEventListener("load",function(){
+function docReady(){
 	document.addEventListener("diviceready",function(){
 		//action
 		//agregamos un campo y un dato
@@ -34,7 +34,7 @@ document.addEventListener("load",function(){
 			}
 		},false); */
 	}, false); 
-},false);
+}
 
 
 	
